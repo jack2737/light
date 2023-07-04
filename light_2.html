@@ -1,0 +1,75 @@
+<!DOCTYPE html>  <!-- 控制顏色 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bulb</title>
+</head>
+<body>
+
+<!-- todo: change function -->
+<table>
+    <ta>
+        <th><img src="bulb_off.png"></th>
+
+    <th><div>
+     <button onclick="switchBulb(0)">1 light</button>
+    <p><button onclick="switchcolor(0,1)">black</button></p>
+    <p><button onclick="switchcolor(0,2)">purple</button></p>
+    <p><button onclick="switchcolor(0,3)">pink</button></p>
+    <p><button onclick="switchcolor(0,4)">blue</button></p>
+    <p><button onclick="switchcolor(0,5)">orang</button></p>
+    <p><button onclick="switchcolor(0,6)">yellow</button></p>
+    <p><button onclick="switchcolor(0,7)">red</button></p>
+    <p><button onclick="switchcolor(0,8)">green</button></p>
+    </div>
+    </th>
+</table>
+        <<img src="bulb_off1.png"/>
+        <button onclick="switchBulb(1)">2 light</button>
+        <img src="bulb_off.png"/>
+        <button onclick="switchBulb(2)">3 light</button>
+        <img src="bulb_off.png"/>
+        <button onclick="switchBulb(3)">4 light</button>
+<script>
+  function switchBulb(a) {
+    let image = document.getElementsByTagName('img')[a];
+    // todo
+    if (image.src.match("bulb_off.png")) {
+      image.src = "bulb_on.png";
+    } else {
+      image.src = "bulb_off.png";
+    }
+  }
+  function switchcolor(a,b) {
+    let image = document.getElementsByTagName('img')[a];
+    // todo
+    if (image.src.match("bulb_off.png")) {
+
+    } else if(b==1){
+      image.src = "black.png";
+    }
+    else if(b==2){
+      image.src = "purple.png";
+    }
+    else if(b==3){
+      image.src = "pink.png";
+    }
+    else if(b==4){
+      image.src = "blue.png";
+    }
+    else if(b==5){
+      image.src = "orang.png";
+    }
+    else if(b==6){
+      image.src = "yellow.png";
+    }
+    else if(b==7){
+      image.src = "red.png";
+    }
+    else if(b==8) {
+      image.src = "green.png";
+    }
+  }
+</script>
+</body>
+</html>
